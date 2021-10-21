@@ -1,0 +1,127 @@
+/* Estilização Cabeçalho */
+
+.header_index {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  color: #ffffff;
+  height: 399px;
+  background: #422755 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  clip-path: polygon(0 0, 100% 0, 100% 69%, 0 60%);
+  line-height: 10px;
+  font-family: "Open Sans", sans-serif;
+  height: 381px;
+}
+
+.header_title {
+  font-size: 36px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header_text {
+  font-size: 18px;
+}
+
+/* Estilização Container Busca de Tarefas */
+
+.container_tasks {
+  width: 1081px;
+  height: 85px;
+  background: #feaf3d;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+ 
+  
+}
+
+.container_input {
+  width: 276px;
+  height: 34px;
+  background: #ffffff;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.container_button {
+  width: 69px;
+  height: 34px;
+  font-family: Open Sans;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  background: #6e4b87;
+  border-radius: 8px;
+  margin-left: -10px;
+}
+
+.container_label {
+  font-size: 14px;
+  font-family: Open Sans;
+  color: #FFF;
+  height: 34px;
+}
+
+.container_select {
+  width: 193px;
+  height: 34px;
+  background: #ffffff;
+  border-radius: 8px;
+  font-family: Open Sans;
+  font-size: 14px;
+  color: #414141;
+}
+
+/* Estilização Cards de tarefas */
+
+.container_card{
+  display:flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: center;
+ }
+
+.card{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+margin: 10px 10px;
+}
+
+.card_button_concluir{
+width: 218px;
+height: 40px;
+background: #422755;
+border-radius: 8px;
+color: #FFF;
+font-size: 16px;
+display: flex;
+text-align: center;
+}
+
+.card_button_prazo{
+width: 218px;
+height: 40px;
+background: #F04837;
+border-radius: 8px;
+color: #FFF;
+font-size: 16px;
+
+}
+
+.card_button{
+width: 197px;
+height: 38px;
+background: #6E4B87;
+border-radius: 8px;
+color: #FFF;
+justify-content: center;
+
+
+}
