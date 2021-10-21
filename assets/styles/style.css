@@ -1,3 +1,8 @@
+:root {
+  font-family: "Open Sans", sans-serif;
+
+}
+
 /* Estilização Cabeçalho */
 
 .header_index {
@@ -10,14 +15,12 @@
   border: 1px solid #707070;
   clip-path: polygon(0 0, 100% 0, 100% 69%, 0 60%);
   line-height: 10px;
-  font-family: "Open Sans", sans-serif;
   height: 381px;
 }
 
 .header_title {
   font-size: 36px;
-  font-family: "Open Sans", sans-serif;
-}
+  }
 
 .header_text {
   font-size: 18px;
@@ -62,7 +65,6 @@
 
 .container_label {
   font-size: 14px;
-  font-family: Open Sans;
   color: #FFF;
   height: 34px;
 }
@@ -72,7 +74,6 @@
   height: 34px;
   background: #ffffff;
   border-radius: 8px;
-  font-family: Open Sans;
   font-size: 14px;
   color: #414141;
 }
@@ -121,7 +122,51 @@ height: 38px;
 background: #6E4B87;
 border-radius: 8px;
 color: #FFF;
-justify-content: center;
+align-items: center;
 
+}
 
+/* Estilização seção dicas */
+
+.dicas{
+width: 876px;
+height: 122px;
+background: #E5E5E5;
+border-radius: 8px;
+}
+
+.dicas_paragrafo{
+  color: #6E4B87;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form_label{
+font-size: 12px;
+color: #757575;
+}
+
+.form_input{
+background: #FFFFFF;
+border-radius: 8px;
+}
+
+.button_dicas{
+width: 100px;
+height: 34px;
+background: #6E4B87;
+border-radius: 8px;
+color: #FFF;
+}
+
+/* Estilização "Sobre" */
+
+.sobre{
+  display: flex;
+}
+
+.sobre_text{
+  
+  flex-direction: row;
+height: 190px;
 }
