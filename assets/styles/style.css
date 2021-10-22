@@ -1,6 +1,5 @@
 :root {
   font-family: "Open Sans", sans-serif;
-
 }
 
 /* Estilização Cabeçalho */
@@ -20,7 +19,7 @@
 
 .header_title {
   font-size: 36px;
-  }
+}
 
 .header_text {
   font-size: 18px;
@@ -36,10 +35,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  max-width: 1000px;
   margin: 0 auto;
- 
-  
+  margin-bottom: 35px;
 }
 
 .container_input {
@@ -47,11 +44,13 @@
   height: 34px;
   background: #ffffff;
   border-radius: 8px 0px 0px 8px;
+  border: none;
+  padding: 5px;
 }
 
 .container_button {
   width: 69px;
-  height: 34px;
+  height: 45px;
   font-family: Open Sans;
   font-weight: bold;
   font-size: 14px;
@@ -60,13 +59,15 @@
   color: #ffffff;
   background: #6e4b87;
   border-radius: 8px;
+  border: none;
   margin-left: -10px;
 }
 
 .container_label {
   font-size: 14px;
-  color: #FFF;
+  color: #fff;
   height: 34px;
+  margin-right: 15px;
 }
 
 .container_select {
@@ -76,97 +77,182 @@
   border-radius: 8px;
   font-size: 14px;
   color: #414141;
+  border: none;
 }
 
 /* Estilização Cards de tarefas */
 
-.container_card{
-  display:flex;
+.container_card {
+  display: flex;
   flex-wrap: wrap;
-  max-width: 1000px;
-  margin: 0 auto;
+  max-width: 1081px;
+  margin: 0px auto;
   justify-content: center;
+}
+
+.card {
+  border: 1px solid #000;
+  border-radius: 14px;
+  padding: 10px;
+  margin: 10px 10px;
+  color: #414141;
+  justify-content: center;
+}
+
+.card_tarefa {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.card_descricao {
+  font-size: 12px;
+}
+
+.card_prazo {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.card_inclusao {
+  font-size: 10px;
+  color: #414141;
+}
+
+.card_button_concluir {
+  width: 218px;
+  height: 40px;
+  background: #422755;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
  }
 
-.card{
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 5px;
-margin: 10px 10px;
+.card_button_prazo {
+  margin-top: 10px;
+  width: 218px;
+  height: 40px;
+  background: #f04837;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  border: none;
 }
 
-.card_button_concluir{
-width: 218px;
-height: 40px;
-background: #422755;
-border-radius: 8px;
-color: #FFF;
-font-size: 16px;
-display: flex;
-text-align: center;
-}
-
-.card_button_prazo{
-width: 218px;
-height: 40px;
-background: #F04837;
-border-radius: 8px;
-color: #FFF;
-font-size: 16px;
-
-}
-
-.card_button{
-width: 197px;
-height: 38px;
-background: #6E4B87;
-border-radius: 8px;
-color: #FFF;
-align-items: center;
-
+.card_button {
+  width: 197px;
+  height: 38px;
+  background: #6e4b87;
+  border-radius: 8px;
+  color: #fff;
+  border: none;
+  margin: 15px 0;
 }
 
 /* Estilização seção dicas */
 
-.dicas{
-width: 876px;
-height: 122px;
-background: #E5E5E5;
-border-radius: 8px;
+.dicas {
+  width: 876px;
+  height: 122px;
+  background: #e5e5e5;
+  border-radius: 8px;
+  margin: 10px auto;
+  padding: 10px;
 }
 
-.dicas_paragrafo{
-  color: #6E4B87;
+.dicas_paragrafo {
+  color: #6e4b87;
   font-size: 14px;
   font-weight: bold;
+  padding: 15px;
 }
 
-.form_label{
-font-size: 12px;
-color: #757575;
+.form_dicas {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
 }
 
-.form_input{
-background: #FFFFFF;
-border-radius: 8px;
+.test_mudar {
+  display: flex;
 }
 
-.button_dicas{
-width: 100px;
-height: 34px;
-background: #6E4B87;
-border-radius: 8px;
-color: #FFF;
+.dicas_nome {
+  display: flex;
+  flex-direction: column;
+}
+
+.dicas_email {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_label {
+  font-size: 12px;
+  color: #757575;
+}
+
+.form_input {
+  background: #ffffff;
+  border-radius: 8px;
+  width: 335px;
+  height: 34px;
+  border: none;
+  }
+
+.button_form {
+  align-items: center;
+  padding: 15px;
+}
+
+.button_dicas {
+  width: 100px;
+  height: 34px;
+  background: #6e4b87;
+  border-radius: 8px;
+  color: #fff;
+  border: none;
 }
 
 /* Estilização "Sobre" */
 
-.sobre{
+.sobre {
   display: flex;
+  flex-direction: column;
+  /* height: 190px; */
 }
 
-.sobre_text{
-  
-  flex-direction: row;
-height: 190px;
+.sobre_imagem {
+  width: 234px;
+  height: 137px;
+}
+
+.sobre_text {
+  flex-direction: column;
+}
+
+/* Estilização do footer */
+
+footer {
+  height: 126px;
+  background-color: #422755;
+}
+
+.footer_index {
+  text-align: center;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.footer_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
 }
