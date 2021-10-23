@@ -45,12 +45,11 @@
   background: #ffffff;
   border-radius: 8px 0px 0px 8px;
   border: none;
-  padding: 5px;
 }
 
 .container_button {
   width: 69px;
-  height: 45px;
+  height: 34px;
   font-family: Open Sans;
   font-weight: bold;
   font-size: 14px;
@@ -96,26 +95,58 @@
   padding: 10px;
   margin: 10px 10px;
   color: #414141;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.card_tarefa {
+.input_card_tarefa {
+  border: none;
   font-weight: bold;
   font-size: 14px;
+  color: #414141;
+  margin-top: 5px;
+  text-align: center;
 }
 
 .card_descricao {
   font-size: 12px;
 }
 
+.input_card_descricao {
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: justify;
+}
+
 .card_prazo {
   font-weight: bold;
   font-size: 12px;
+  margin-top: 5px;
+}
+
+.input_card_prazo {
+  font-size: 12px;
+  width: 145px;
+  height: 25px;
+  color: #f04837;
+  border: none;
 }
 
 .card_inclusao {
   font-size: 10px;
   color: #414141;
+  margin-top: 5px;
+}
+
+.input_card_inclusao {
+  font-size: 10px;
+  height: 14px;
+  border: none;
+  width: 125px;
+}
+
+i {
+  margin-right: 10px;
 }
 
 .card_button_concluir {
@@ -129,7 +160,11 @@
   align-items: center;
   justify-content: center;
   border: none;
- }
+  display: none;
+}
+.card:hover .card_button_concluir{
+  display: flex;
+}
 
 .card_button_prazo {
   margin-top: 10px;
@@ -139,7 +174,15 @@
   border-radius: 8px;
   color: #fff;
   font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
+  display: none;
+}
+
+.card:hover .card_button_prazo {
+  display: flex;
 }
 
 .card_button {
@@ -149,8 +192,9 @@
   border-radius: 8px;
   color: #fff;
   border: none;
-  margin: 15px 0;
+  margin: 20px 0;
 }
+
 
 /* Estilização seção dicas */
 
@@ -202,7 +246,7 @@
   width: 335px;
   height: 34px;
   border: none;
-  }
+}
 
 .button_form {
   align-items: center;
@@ -222,17 +266,28 @@
 
 .sobre {
   display: flex;
-  flex-direction: column;
-  /* height: 190px; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 1081px;
+  margin: 0 auto;
+  padding: 50px;
 }
 
 .sobre_imagem {
   width: 234px;
   height: 137px;
+  justify-content: center;
 }
 
 .sobre_text {
   flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  margin-left: 50px;
+  font-size: 14px;
+  color: #414141;
+  line-height: 19px;
 }
 
 /* Estilização do footer */
