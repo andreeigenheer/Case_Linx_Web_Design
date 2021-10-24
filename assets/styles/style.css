@@ -36,7 +36,7 @@
   background: #feaf3d;
   border-radius: 8px;
   display: flex;
-  justify-content:space-around ;
+  justify-content: space-around;
   align-items: center;
   margin: 0 auto;
   margin-bottom: 35px;
@@ -46,7 +46,7 @@
   width: 276px;
   height: 34px;
   background: #ffffff;
-  border-radius: 8px 0px 0px 8px;
+  border-radius: 8px;
   border: none;
   padding-left: 8px;
 }
@@ -63,11 +63,11 @@
   background: #6e4b87;
   border-radius: 8px;
   border: none;
-  margin-left: -10px;
+  margin-left: -15px;
 }
 
-.container_button:hover{
-  background:#422755 ;
+.container_button:hover {
+  background: #422755;
 }
 
 .container_label {
@@ -88,6 +88,22 @@
   border: none;
 }
 
+.container_button_tarefa{
+ height: 34px;
+ width: 79px;
+ border-radius: 8px;
+ background: #6e4b87;
+ color:#fff;
+ border: none;
+ font-size: 14px;
+ font-weight: bold;
+ margin-left: 10px;
+}
+
+.container_button_tarefa:hover{
+  background: #422755;
+}
+
 /* Estilização Cards de tarefas */
 
 .container_card {
@@ -96,54 +112,51 @@
   max-width: 1081px;
   margin: 0px auto;
   justify-content: center;
-  
 }
 
 .card {
-  height: 100%; 
+  height: 100%;
   border: 1px solid #000;
   border-radius: 14px;
   padding: 10px;
   margin: 10px 10px;
   color: #414141;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
-.tag_card_prazo_curto{
+.tag_card_prazo_curto {
   width: 102px;
   height: 29px;
   background: #422755;
- border-radius: 0px 5px 5px 0px;
- position: absolute;
- color: #fff;
- display: flex;
- justify-content: center;
- align-items: center;
- text-align: center;
- font-size: 12px;
- font-weight: bold;
- margin-top: 10px;
- margin-left: -20px;
-
+  border-radius: 0px 5px 5px 0px;
+  position: absolute;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: -20px;
 }
 
-.tag_card_prazo_atrasado{
+.tag_card_prazo_atrasado {
   width: 102px;
   height: 29px;
-  background:#f04837;
- border-radius: 0px 5px 5px 0px;
- position: absolute;
- color: #fff;
- display: flex;
- justify-content: center;
- align-items: center;
- text-align: center;
- font-size: 12px;
- font-weight: bold;
- margin-top: 10px;
- margin-left: -20px;
-
+  background: #f04837;
+  border-radius: 0px 5px 5px 0px;
+  position: absolute;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: -20px;
 }
 
 .input_card_tarefa {
@@ -152,13 +165,11 @@
   font-size: 14px;
   color: #414141;
   margin-top: 5px;
-  text-align: center;
 }
 
 .input_card_descricao {
   font-size: 12px;
   margin-top: 5px;
-  text-align: justify;
   border: none;
   width: 218px;
   height: 48px;
@@ -168,7 +179,7 @@
   font-weight: bold;
   font-size: 12px;
   margin-top: 5px;
-  color:#422755;
+  color: #422755;
 }
 
 .card_prazo_atrasado {
@@ -177,7 +188,7 @@
   font-weight: bold;
   font-size: 10px;
   margin-top: 5px;
-  color:#f04837;
+  color: #f04837;
   text-align: center;
 }
 
@@ -187,7 +198,7 @@
   margin-top: 5px;
 }
 
-.label_prazo_curto{
+.label_prazo_curto {
   color: #f04837;
   font-weight: bold;
 }
@@ -217,9 +228,8 @@ i {
   margin-top: 10px;
 }
 
-.card_button_concluir:hover{
-  background: #6E4B87;
-  ;
+.card_button_concluir:hover {
+  background: #6e4b87;
 }
 
 .card_button_prazo {
@@ -237,7 +247,7 @@ i {
   display: none;
 }
 
-.card_button_prazo:hover{
+.card_button_prazo:hover {
   background: #c02615;
 }
 
@@ -259,7 +269,7 @@ i {
   margin: 20px 0;
 }
 
-.card_button:hover{
+.card_button:hover {
   background: #422755;
 }
 
@@ -316,7 +326,6 @@ i {
   height: 34px;
   border: none;
   padding-left: 8px;
-  
 }
 
 .button_form {
@@ -334,7 +343,7 @@ i {
   border: none;
 }
 
-.button_dicas:hover{
+.button_dicas:hover {
   background: #422755;
 }
 
@@ -387,5 +396,3 @@ footer {
   font-size: 12px;
   line-height: 20px;
 }
-
-
