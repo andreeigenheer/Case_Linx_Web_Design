@@ -19,6 +19,9 @@
 
 .header_title {
   font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .header_text {
@@ -87,16 +90,54 @@
   max-width: 1081px;
   margin: 0px auto;
   justify-content: center;
+  
 }
 
 .card {
+  height: 100%; 
   border: 1px solid #000;
   border-radius: 14px;
   padding: 10px;
   margin: 10px 10px;
   color: #414141;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+}
+
+.tag_card_prazo_curto{
+  width: 102px;
+  height: 29px;
+  background: #422755;
+ border-radius: 0px 5px 5px 0px;
+ position: absolute;
+ color: #fff;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ font-size: 12px;
+ font-weight: bold;
+ margin-top: 10px;
+ margin-left: -20px;
+
+}
+
+.tag_card_prazo_atrasado{
+  width: 102px;
+  height: 29px;
+  background:#f04837;
+ border-radius: 0px 5px 5px 0px;
+ position: absolute;
+ color: #fff;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ font-size: 12px;
+ font-weight: bold;
+ margin-top: 10px;
+ margin-left: -20px;
+
 }
 
 .input_card_tarefa {
@@ -116,6 +157,26 @@
   font-size: 12px;
   margin-top: 5px;
   text-align: justify;
+  border: none;
+  width: 218px;
+  height: 48px;
+}
+
+.card_prazo_curto {
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 5px;
+  color:#422755;
+}
+
+.card_prazo_atrasado {
+  width: 63px;
+  height: 14px;
+  font-weight: bold;
+  font-size: 10px;
+  margin-top: 5px;
+  color:#f04837;
+  text-align: center;
 }
 
 .card_prazo {
@@ -124,11 +185,49 @@
   margin-top: 5px;
 }
 
+.label_prazo_curto{
+  color: #f04837;
+  font-weight: bold;
+}
+
+.input_card_prazo_atrasado {
+  width: 89px;
+  height: 25px;
+  font-weight: bold;
+  font-size: 12px;
+  color:#f04837;
+  border: none;
+}
+
 .input_card_prazo {
   font-size: 12px;
   width: 145px;
   height: 25px;
-  color: #f04837;
+  color:#414141;
+  border: none;
+}
+
+.prioridade,
+.grupo {
+  font-weight: bold;
+  font-size: 12px;
+  border: none;
+}
+
+select:required:invalid {
+  color: gray;
+}
+
+option[value=""][disabled] {
+  display: none;
+}
+
+option {
+  color: black;
+}
+
+.input_card_prioridade {
+  font-size: 12px;
   border: none;
 }
 
@@ -161,9 +260,7 @@ i {
   justify-content: center;
   border: none;
   display: none;
-}
-.card:hover .card_button_concluir{
-  display: flex;
+  margin-top: 10px;
 }
 
 .card_button_prazo {
@@ -182,8 +279,13 @@ i {
 }
 
 .card:hover .card_button_prazo {
-  display: flex;
+  display: block;
 }
+
+.card:hover .card_button_concluir {
+  display: block;
+}
+
 
 .card_button {
   width: 197px;
@@ -194,7 +296,6 @@ i {
   border: none;
   margin: 20px 0;
 }
-
 
 /* Estilização seção dicas */
 
@@ -300,7 +401,7 @@ footer {
 .footer_index {
   text-align: center;
   font-size: 12px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .footer_text {

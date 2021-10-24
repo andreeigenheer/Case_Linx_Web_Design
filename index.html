@@ -1,516 +1,340 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/reset.css" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/style.css" />
     <title>Index</title>
-  </head>
+</head>
 
-  <body>
     <header>
-      <div class="header_index">
-        <div class="header_title">
-          <h1>Tarefas a fazer</h1>
+        <div class="header_index">
+            <div class="header_title">
+                <p>Tarefas a fazer</p>
+            </div>
+
+            <div class="header_text">
+                <p>Adicione e complete tarefas para organizar melhor sua semana :)</p>
+            </div>
         </div>
-        <div class="header_text">
-          <p>
-            Adicione e complete tarefas para organizar melhor sua semana. :)
-          </p>
-        </div>
-      </div>
     </header>
 
     <div class="container_tasks">
-      <div class="container_seach">
-        <input class="container_input" placeholder="Busque tarefas" />
-        <button class="container_button">Buscar</button>
-      </div>
+        <div class="container_seach">
+            <input class="container_input" placeholder="Busque tarefas" />
+            <button class="container_button">Buscar</button>
+        </div>
 
-      <div class="container_deadline">
-        <label class="container_label">Organizar por:</label>
-        <select class="container_select">
-          <option>Prazo</option>
-          <option>Prioridade</option>
-        </select>
-      </div>
+        <div class="container_deadline">
+            <label class="container_label">Organizar por:</label>
+            <select class="container_select" required>
+                <option>Selecione</option>
+                <option>Prazo</option>
+                <option>Prioridade</option>
+            </select>
+        </div>
     </div>
 
     <div class="container_card">
-      <div class="card">
-        <img src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
+        <div class="card">
+            <img src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
+            
+            <div class="tag_card_prazo_curto">Prazo Curto!</div>
 
-        <input
-          class="input_card_tarefa"
-          type="text"
-          id="text_tarefa"
-          name="tarefa"
-          placeholder="Nome da tarefa"
-        />
+            <input class="input_card_tarefa" type="text" id="text_tarefa" name="tarefa" placeholder="Tarefa" />
 
-        <textarea
-          class="input_card_descricao"
-          id="text_descricao"
-          placeholder=" Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata."
-          name="descricao"
-          cols="20"
-          rows="10"
-        ></textarea>
+            <textarea class="input_card_descricao" id="text_descricao"
+                placeholder=" Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata."
+                name="descricao" cols="20" rows="5"></textarea>
 
-        <div>
-          <label for="date" class="card_prazo">Prazo:</label>
-          <input
-            class="input_card_prazo"
-            type="date"
-            id="date_prazo"
-            name="prazo"
-          />
+            <div>
+                <label for="date" class="card_prazo_curto">Prazo:</label>
+                <label class="label_prazo_curto">00/00</label>
+                <!-- <input class="input_card_prazo" type="text" id="date_prazo" name="prazo" /> -->
+                
+            </div>
+
+            <div>
+                <label for="date" class="card_inclusao">Data da inclusão:</label>
+                <label class="input_card_inclusao">há 2 semanas</label>
+            </div>
+
+            <button class="card_button_concluir"><i class="fas fa-check"></i>Concluir</button>
+            <button class="card_button_prazo"><i class="fas fa-clock"></i>Alterar Prazo</button>
+
         </div>
 
-        <div>
-          <label for="date" class="card_inclusao">Data da inclusão:</label>
-          <input
-            class="input_card_inclusao"
-            type="date"
-            id="date_inclusao"
-            name="inclusao"
-          />
+        <div class="card">
+            
+            <img src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
+
+            <div class="tag_card_prazo_atrasado">Atrasado!</div>
+
+            <input class="input_card_tarefa" type="text" id="text_tarefa" name="tarefa" placeholder="Tarefa" />
+
+            <textarea class="input_card_descricao" id="text_descricao"
+                placeholder=" Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata."
+                name="descricao" cols="20" rows="10"></textarea>
+
+                <div>
+                    <label for="date" class="card_prazo_atrasado">Prazo:</label>
+                    <input class="input_card_prazo_atrasado" type="text" id="date_prazo" name="prazo" />
+                    <label class="card_prazo_atrasado">Atrasado a 3 dias!</label>
+            </div>
+        
+            <div>
+                <label for="date" class="card_inclusao">Data da inclusão:</label>
+                <input class="input_card_inclusao" type="date" id="date_inclusao" name="inclusao" />
+            </div>
+
+            <button class="card_button_concluir"><i class="fas fa-check"></i>Concluir</button>
+            <button class="card_button_prazo"><i class="fas fa-clock"></i>Alterar Prazo</button>
+           
+        </div> 
+
+         <div class="card">
+            <img src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
+
+            <input class="input_card_tarefa" type="text" id="text_tarefa" name="tarefa" placeholder="Tarefa" />
+
+            <textarea class="input_card_descricao" id="text_descricao"
+                placeholder=" Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata."
+                name="descricao" cols="20" rows="10"></textarea>
+
+            <div>
+                <label for="date" class="card_prazo">Prazo:</label>
+                <input class="input_card_prazo" type="date" id="date_prazo" name="prazo" />
+            </div>
+
+            <div>
+                <label for="date" class="card_inclusao">Data da inclusão:</label>
+                <input class="input_card_inclusao" type="date" id="date_inclusao" name="inclusao" />
+            </div>
+
+            <button class="card_button_concluir"><i class="fas fa-check"></i>Concluir</button>
+            <button class="card_button_prazo"><i class="fas fa-clock"></i>Alterar Prazo</button>
+
         </div>
 
-        <button class="card_button_concluir">
-          <i class="fas fa-check"></i>Concluir
-        </button>
-        <button class="card_button_prazo">
-          <i class="fas fa-clock"></i>Alterar Prazo
-        </button>
-      </div>
+        <div class="card">
+            <img src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
 
-      <div class="card">
-        <img src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
+            <input class="input_card_tarefa" type="text" id="text_tarefa" name="tarefa" placeholder="Tarefa" />
 
-        <input
-          class="input_card_tarefa"
-          type="text"
-          id="text_tarefa"
-          name="tarefa"
-          placeholder="Nome da tarefa"
-        />
+            <textarea class="input_card_descricao" id="text_descricao"
+                placeholder=" Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata."
+                name="descricao" cols="20" rows="10"></textarea>
 
-          <textarea
-          class="input_card_descricao"
-          id="text_descricao"
-          placeholder=" Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata."
-          name="descricao"
-          cols="20"
-          rows="10"
-        ></textarea>
+            <div>
+                <label for="date" class="card_prazo">Prazo:</label>
+                <input class="input_card_prazo" type="date" id="date_prazo" name="prazo" />
+            </div>
 
-        <div>
-          <label for="date" class="card_prazo">Prazo:</label>
-          <input
-            class="input_card_prazo"
-            type="date"
-            id="date_prazo"
-            name="prazo"
-          />
+      
+            <div>
+                <label for="date" class="card_inclusao">Data da inclusão:</label>
+                <input class="input_card_inclusao" type="date" id="date_inclusao" name="inclusao" />
+            </div>
+
+            <button class="card_button_concluir"><i class="fas fa-check"></i>Concluir</button>
+            <button class="card_button_prazo"><i class="fas fa-clock"></i>Alterar Prazo</button>
+
         </div>
 
-        <div>
-          <label for="date" class="card_inclusao">Data da inclusão:</label>
-          <input
-            class="input_card_inclusao"
-            type="date"
-            id="date_inclusao"
-            name="inclusao"
-          />
+        <div class="card">
+            <img src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
+
+            <input class="input_card_tarefa" type="text" id="text_tarefa" name="tarefa" placeholder="Tarefa" />
+
+            <textarea class="input_card_descricao" id="text_descricao"
+                placeholder=" Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata."
+                name="descricao" cols="20" rows="10"></textarea>
+
+            <div>
+                <label for="date" class="card_prazo">Prazo:</label>
+                <input class="input_card_prazo" type="date" id="date_prazo" name="prazo" />
+            </div>
+
+            <div>
+                <label for="date" class="card_inclusao">Data da inclusão:</label>
+                <input class="input_card_inclusao" type="date" id="date_inclusao" name="inclusao" />
+            </div>
+
+            <button class="card_button_concluir"><i class="fas fa-check"></i>Concluir</button>
+            <button class="card_button_prazo"><i class="fas fa-clock"></i>Alterar Prazo</button>
+
         </div>
 
-        <button class="card_button_concluir">
-          <i class="fas fa-check"></i>Concluir
-        </button>
-        <button class="card_button_prazo">
-          <i class="fas fa-clock"></i>Alterar Prazo
-        </button>
-      </div>
+        <div class="card">
+            <img src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
 
-      <div class="card">
-        <img src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
+            <input class="input_card_tarefa" type="text" id="text_tarefa" name="tarefa" placeholder="Tarefa" />
 
-        <input
-          class="input_card_tarefa"
-          type="text"
-          id="text_tarefa"
-          name="tarefa"
-          placeholder="Nome da tarefa"
-        />
+            <textarea class="input_card_descricao" id="text_descricao"
+                placeholder=" Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata."
+                name="descricao" cols="20" rows="10"></textarea>
 
-        <!-- <p class="card_descricao">Descrição:</p> -->
-        <textarea
-          class="input_card_descricao"
-          id="text_descricao"
-          placeholder=" Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata."
-          name="descricao"
-          cols="20"
-          rows="10"
-        ></textarea>
+            <div>
+                <label for="date" class="card_prazo">Prazo:</label>
+                <input class="input_card_prazo" type="date" id="date_prazo" name="prazo" />
+            </div>
 
-        <div>
-          <label for="date" class="card_prazo">Prazo:</label>
-          <input
-            class="input_card_prazo"
-            type="date"
-            id="date_prazo"
-            name="prazo"
-          />
+            <div>
+                <label for="date" class="card_inclusao">Data da inclusão:</label>
+                <input class="input_card_inclusao" type="date" id="date_inclusao" name="inclusao" />
+            </div>
+
+            <button class="card_button_concluir"><i class="fas fa-check"></i>Concluir</button>
+            <button class="card_button_prazo"><i class="fas fa-clock"></i>Alterar Prazo</button>
+
         </div>
 
-        <div>
-          <label for="date" class="card_inclusao">Data da inclusão:</label>
-          <input
-            class="input_card_inclusao"
-            type="date"
-            id="date_inclusao"
-            name="inclusao"
-          />
+        <div class="card">
+            <img src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
+
+            <input class="input_card_tarefa" type="text" id="text_tarefa" name="tarefa" placeholder="Tarefa" />
+
+            <textarea class="input_card_descricao" id="text_descricao"
+                placeholder=" Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata."
+                name="descricao" cols="20" rows="10"></textarea>
+
+            <div>
+                <label for="date" class="card_prazo">Prazo:</label>
+                <input class="input_card_prazo" type="date" id="date_prazo" name="prazo" />
+            </div>
+
+            <div>
+                <label for="date" class="card_inclusao">Data da inclusão:</label>
+                <input class="input_card_inclusao" type="date" id="date_inclusao" name="inclusao" />
+            </div>
+
+            <button class="card_button_concluir"><i class="fas fa-check"></i>Concluir</button>
+            <button class="card_button_prazo"><i class="fas fa-clock"></i>Alterar Prazo</button>
+
         </div>
 
-        <button class="card_button_concluir"><i class="fas fa-check"></i>Concluir</button>
-        <button class="card_button_prazo">
-          <i class="fas fa-clock"></i>Alterar Prazo
-        </button>
-      </div>
+        <div class="card">
+            <img src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
 
-      <div class="card">
-        <img src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
+            <input class="input_card_tarefa" type="text" id="text_tarefa" name="tarefa" placeholder="Tarefa" />
 
-        <input
-          class="input_card_tarefa"
-          type="text"
-          id="text_tarefa"
-          name="tarefa"
-          placeholder="Nome da tarefa"
-        />
+            <textarea class="input_card_descricao" id="text_descricao"
+                placeholder=" Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata."
+                name="descricao" cols="20" rows="10"></textarea>
 
-        <!-- <p class="card_descricao">Descrição:</p> -->
-        <textarea
-          class="input_card_descricao"
-          id="text_descricao"
-          placeholder=" Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata."
-          name="descricao"
-          cols="20"
-          rows="10"
-        ></textarea>
+            <div>
+                <label for="date" class="card_prazo">Prazo:</label>
+                <input class="input_card_prazo" type="date" id="date_prazo" name="prazo" />
+            </div>
 
-        <div>
-          <label for="date" class="card_prazo">Prazo:</label>
-          <input
-            class="input_card_prazo"
-            type="date"
-            id="date_prazo"
-            name="prazo"
-          />
+            <!-- <div>
+                <label class="prioridade">Prioridade:</label>
+                <select class="input_card_prioridade" required>
+                <option value="" disabled selected>Selecione</option>
+                <option value="alta">Alta</option=>
+                <option value="media">Média</option>
+                <option value="baixa">Baixa</option>
+                </select>
+            </div> -->
+
+            <!-- <div>
+                <label class="grupo">Grupo:</label>
+                <select class="input_card_prioridade" required>
+                <option value="" disabled selected>Selecione</option>
+                <option value="trabalho">Trabalho</option>
+                <option value="familiar">Familiar</option>
+                <option value="pessoal">Pessoal</option>
+                </select>
+            </div> -->
+
+            <div>
+                <label for="date" class="card_inclusao">Data da inclusão:</label>
+                <input class="input_card_inclusao" type="date" id="date_inclusao" name="inclusao" />
+            </div>
+
+            <button class="card_button_concluir"><i class="fas fa-check"></i>Concluir</button>
+            <button class="card_button_prazo"><i class="fas fa-clock"></i>Alterar Prazo</button>
+
         </div>
 
-        <div>
-          <label for="date" class="card_inclusao">Data da inclusão:</label>
-          <input
-            class="input_card_inclusao"
-            type="date"
-            id="date_inclusao"
-            name="inclusao"
-          />
-        </div>
-
-        <button class="card_button_concluir"><i class="fas fa-check"></i>Concluir</button>
-        <button class="card_button_prazo">
-          <i class="fas fa-clock"></i>Alterar Prazo
-        </button>
-      </div>
-
-      <div class="card">
-        <img src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
-
-        <input
-          class="input_card_tarefa"
-          type="text"
-          id="text_tarefa"
-          name="tarefa"
-          placeholder="Nome da tarefa"
-        />
-
-        <!-- <p class="card_descricao">Descrição:</p> -->
-        <textarea
-          class="input_card_descricao"
-          id="text_descricao"
-          placeholder=" Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata."
-          name="descricao"
-          cols="20"
-          rows="10"
-        ></textarea>
-
-        <div>
-          <label for="date" class="card_prazo">Prazo:</label>
-          <input
-            class="input_card_prazo"
-            type="date"
-            id="date_prazo"
-            name="prazo"
-          />
-        </div>
-
-        <div>
-          <label for="date" class="card_inclusao">Data da inclusão:</label>
-          <input
-            class="input_card_inclusao"
-            type="date"
-            id="date_inclusao"
-            name="inclusao"
-          />
-        </div>
-
-        <button class="card_button_concluir"><i class="fas fa-check"></i>Concluir</button>
-        <button class="card_button_prazo">
-          <i class="fas fa-clock"></i>Alterar Prazo
-        </button>
-      </div>
-
-      <div class="card">
-        <img src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
-
-        <input
-          class="input_card_tarefa"
-          type="text"
-          id="text_tarefa"
-          name="tarefa"
-          placeholder="Nome da tarefa"
-        />
-
-        <!-- <p class="card_descricao">Descrição:</p> -->
-        <textarea
-          class="input_card_descricao"
-          id="text_descricao"
-          placeholder=" Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata."
-          name="descricao"
-          cols="20"
-          rows="10"
-        ></textarea>
-
-        <div>
-          <label for="date" class="card_prazo">Prazo:</label>
-          <input
-            class="input_card_prazo"
-            type="date"
-            id="date_prazo"
-            name="prazo"
-          />
-        </div>
-
-        <div>
-          <label for="date" class="card_inclusao">Data da inclusão:</label>
-          <input
-            class="input_card_inclusao"
-            type="date"
-            id="date_inclusao"
-            name="inclusao"
-          />
-        </div>
-
-        <button class="card_button_concluir"><i class="fas fa-check"></i>Concluir</button>
-        <button class="card_button_prazo">
-          <i class="fas fa-clock"></i>Alterar Prazo
-        </button>
-      </div>
-
-      <div class="card">
-        <img src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
-
-        <input
-          class="input_card_tarefa"
-          type="text"
-          id="text_tarefa"
-          name="tarefa"
-          placeholder="Nome da tarefa"
-        />
-
-        <!-- <p class="card_descricao">Descrição:</p> -->
-        <textarea
-          class="input_card_descricao"
-          id="text_descricao"
-          placeholder=" Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata."
-          name="descricao"
-          cols="20"
-          rows="10"
-        ></textarea>
-
-        <div>
-          <label for="date" class="card_prazo">Prazo:</label>
-          <input
-            class="input_card_prazo"
-            type="date"
-            id="date_prazo"
-            name="prazo"
-          />
-        </div>
-
-        <div>
-          <label for="date" class="card_inclusao">Data da inclusão:</label>
-          <input
-            class="input_card_inclusao"
-            type="date"
-            id="date_inclusao"
-            name="inclusao"
-          />
-        </div>
-
-        <button class="card_button_concluir"><i class="fas fa-check"></i>Concluir</button>
-        <button class="card_button_prazo">
-          <i class="fas fa-clock"></i>Alterar Prazo
-        </button>
-      </div>
-
-      <div class="card">
-        <img src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
-
-        <input
-          class="input_card_tarefa"
-          type="text"
-          id="text_tarefa"
-          name="tarefa"
-          placeholder="Nome da tarefa"
-        />
-
-        <!-- <p class="card_descricao">Descrição:</p> -->
-        <textarea
-          class="input_card_descricao"
-          id="text_descricao"
-          placeholder=" Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata."
-          name="descricao"
-          cols="20"
-          rows="10"
-        ></textarea>
-
-        <div>
-          <label for="date" class="card_prazo">Prazo:</label>
-          <input
-            class="input_card_prazo"
-            type="date"
-            id="date_prazo"
-            name="prazo"
-          />
-        </div>
-
-        <div>
-          <label for="date" class="card_inclusao">Data da inclusão:</label>
-          <input
-            class="input_card_inclusao"
-            type="date"
-            id="date_inclusao"
-            name="inclusao"
-          />
-        </div>
-
-        <button class="card_button_concluir"><i class="fas fa-check"></i>Concluir</button>
-        <button class="card_button_prazo">
-          <i class="fas fa-clock"></i>Alterar Prazo
-        </button>
-      </div>
-
-      <button class="card_button">Ver mais +</button>
+        <button class="card_button">Ver mais +</button>
     </div>
 
-    <section class="dicas">
-      <div class="dicas_paragrafo">
-        Quer receber dicas para organizar melhor sua rotina? Cadastre-se! deles?
-        Preencha agora!
-      </div>
 
-      <form class="form_dicas">
-        <div class="test_mudar">
-          <div class="dicas_nome">
-            <label class="form_label">nome</label>
-            <input
-              class="form_input"
-              type="text"
-              required
-              name="nome"
-              placeholder="Digite seu nome"
-            />
-          </div>
-
-          <div class="dicas_email">
-            <label class="form_label" for="email">e-mail:</label>
-            <input
-              class="form_input"
-              type="email"
-              required
-              name="email"
-              placeholder="Digite seu e-mail"
-            />
-          </div>
-
-          <div class="button_form">
-            <button class="button_dicas" type="submit">Cadastrar</button>
-          </div>
+    <div class="dicas">
+        <div class="dicas_paragrafo">
+            Quer receber dicas para organizar melhor sua rotina? Cadastre-se! deles?
+            Preencha agora!
         </div>
-      </form>
-    </section>
+
+        <form class="form_dicas">
+            <div class="test_mudar">
+                <div class="dicas_nome">
+                    <label class="form_label">nome</label>
+                    <input class="form_input" type="text" required name="nome" placeholder="Digite seu nome" />
+                </div>
+
+                <div class="dicas_email">
+                    <label class="form_label" for="email">e-mail:</label>
+                    <input class="form_input" type="email" required name="email" placeholder="Digite seu e-mail" />
+                </div>
+
+                <div class="button_form">
+                    <button class="button_dicas" type="submit">Cadastrar</button>
+                </div>
+            </div>
+        </form>
+    </div>
 
     <section class="sobre">
-      <div class="div_sobre">
-        <img
-          class="sobre_imagem"
-          src="./assets/image/logo_linx.JPG"
-          alt="Logo da Linx"
-        />
-      </div>
-      <div class="sobre_text">
-        <p>
-          A Linx é uma empresa brasileira especialista em tecnologia para o
-          varejo. Líder no mercado de software de gestão, com 45,6% de market
-          share do mercado varejista, conforme atesta o IDC.
-        </p>
+        <div class="div_sobre">
+            <img class="sobre_imagem" src="./assets/image/logo_linx.JPG" alt="Logo da Linx" />
+        </div>
 
-        <p>
-          Toda a expertise da Linx na jornada de compra é transformada em
-          insights fundamentais para atingir o que os varejistas mais esperam:
-          fidelizar seus consumidores e atingir resultados concretos e
-          relevantes.
-        </p>
+        <div class="sobre_text">
+            <p>
+                A Linx é uma empresa brasileira especialista em tecnologia para o
+                varejo. Líder no mercado de software de gestão, com 45,6% de market
+                share do mercado varejista, conforme atesta o IDC.
+            </p>
 
-        <p>
-          Com capital aberto na B3 desde 2013, a Linx também se tornou a
-          primeira empresa brasileira de software com capital aberto na NYSE, em
-          2019. A empresa possui mais de 3,5 mil colaboradores distribuídos
-          entre sua sede em São Paulo, 15 filiais pelo Brasil e 5 países da
-          América. Para saber mais, acesse linx.com.br/imprensa.
-        </p>
-      </div>
+            <p>
+                Toda a expertise da Linx na jornada de compra é transformada em
+                insights fundamentais para atingir o que os varejistas mais esperam:
+                fidelizar seus consumidores e atingir resultados concretos e
+                relevantes.
+            </p>
+
+            <p>
+                Com capital aberto na B3 desde 2013, a Linx também se tornou a
+                primeira empresa brasileira de software com capital aberto na NYSE, em
+                2019. A empresa possui mais de 3,5 mil colaboradores distribuídos
+                entre sua sede em São Paulo, 15 filiais pelo Brasil e 5 países da
+                América. Para saber mais, acesse linx.com.br/imprensa.
+            </p>
+        </div>
     </section>
 
     <footer>
-      <div class="footer_index">
-        <div class="footer_text">
-          <div>
-            <p>Testando suas habilidades em HTML e CSS.</p>
-            <p>Linx Impulse 2021</p>
-            <p>Teste ficcional</p>
-            <p>Por André Eigenheer</p>
-          </div>
+        <div class="footer_index">
+            <div class="footer_text">
+                <div>
+                    <p>Testando suas habilidades em HTML e CSS.</p>
+                    <p>Linx Impulse 2021</p>
+                    <p>Teste ficcional</p>
+                    <p>Por André Eigenheer</p>
+                </div>
+            </div>
         </div>
-      </div>
     </footer>
-  </body>
+</body>
 
-  <script
-    src="https://kit.fontawesome.com/b303293aac.js"
-    crossorigin="anonymous"
-  ></script>
+<script src="https://kit.fontawesome.com/b303293aac.js" crossorigin="anonymous"></script>
+
 </html>
