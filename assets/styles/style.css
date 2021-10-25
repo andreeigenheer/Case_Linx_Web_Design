@@ -99,7 +99,7 @@
 }
 
 .card {
-  height: 100%;
+  min-height:100% ;
   border: 1px solid #000;
   border-radius: 14px;
   padding: 10px;
@@ -263,10 +263,13 @@ i {
 
 .card:hover .card_button_prazo {
   display: block;
+
+
 }
 
 .card:hover .card_button_concluir {
   display: block;
+  
 }
 
 .card_button {
@@ -410,9 +413,14 @@ footer {
 /* Estilização Mobile */
 
 @media (max-width: 600px) {
+
+  :root{
+    width: 100%;
+  }
+
   .header_index {
     height: 160px;
-    width: 100%;
+      
   }
 
   .header_title {
@@ -428,13 +436,26 @@ footer {
   }
 
   .container_tasks {
-    width: 100%;
+    width: 344px;
     height: 146px;
     display: block;
+      
+  }
+
+  .container_seach{
+    display: flex;
+    justify-content: space-around;
+   padding: 10px;
+  }
+
+  .container_deadline{
+    display: flex;
+    justify-content: space-around;
   }
 
   .container_card {
     width: 210px;
+    
   }
 
   .icone {
@@ -474,11 +495,12 @@ footer {
   .sobre_imagem {
     width: 157px;
     margin-bottom: 50px;
+    margin-left: 0;
   }
 
   .sobre_text {
     width: 309px;
     margin: 0px;
   }
-  
+
 }
