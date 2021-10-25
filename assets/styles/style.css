@@ -456,8 +456,46 @@ footer {
 
   .container_card {
     width: 210px;
+    display: block;
     
   }
+
+   .card{
+    transform: rotate(-90deg);
+    width: 210px;
+    height: 340px;
+    margin: 0;
+    margin-bottom: -100px;
+    margin-top: -50px;
+    padding: 0;
+    }
+
+.img_card{
+   width: 258,94px;
+   height:210px;
+   clip-path: polygon(0 0, 70% 0, 70% 100%, 0% 100%); 
+   margin-top: 20px;
+
+}
+.input_card_tarefa{
+  
+  align-items: center;
+}
+
+
+   .img_card,
+   .input_card_tarefa,
+   .label_card_descricao, 
+   .card_button_concluir ,
+   .prazo,
+   .inclusao  {
+    transform: rotate(90deg);
+        
+   } 
+
+   .tag_card_prazo_curto, .tag_card_prazo_atrasado{
+     display: none;
+   }
 
   .icone {
     display: inline-flex;
@@ -473,6 +511,8 @@ footer {
     font-weight: bold;
     font-size: 16px;
     font-family: Open Sans;
+    width: 155px;
+    height:30px;
   }
 
   .card_button_concluir > div {
@@ -481,6 +521,10 @@ footer {
 
   .card:hover .card_button_prazo {
     display: none;
+  }
+
+  .card_button{
+    margin-top: 100px;
   }
 
   .dicas {
