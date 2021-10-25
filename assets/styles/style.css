@@ -1,5 +1,5 @@
 :root {
-  font-family: Open Sans; 
+  font-family: Open Sans;
 }
 
 /* Estilização Cabeçalho */
@@ -143,7 +143,7 @@
   margin-left: -20px;
 }
 
-.icone{
+.icone {
   color: #c02615;
   display: none;
 }
@@ -169,14 +169,13 @@
   line-height: 16px;
   letter-spacing: 0em;
   text-align: left;
-   ;
 }
 
 .card_prazo_curto {
   font-weight: bold;
   font-size: 12px;
   margin-top: 5px;
- }
+}
 
 .card_prazo_atrasado {
   font-weight: bold;
@@ -198,7 +197,6 @@
   font-weight: bold;
   font-size: 12px;
   margin-top: 5px;
-  
 }
 
 .label_prazo_curto {
@@ -236,6 +234,10 @@ i {
   margin-top: 10px;
 }
 
+.card_button_concluir > div {
+  display: inline-flex;
+}
+
 .card_button_concluir:hover {
   background: #6e4b87;
 }
@@ -257,17 +259,14 @@ i {
 
 .card_button_prazo:hover {
   background: #c02615;
-  
 }
 
 .card:hover .card_button_prazo {
   display: block;
-   
 }
 
 .card:hover .card_button_concluir {
   display: block;
-  
 }
 
 .card_button {
@@ -411,60 +410,75 @@ footer {
 /* Estilização Mobile */
 
 @media (max-width: 600px) {
+  .header_index {
+    height: 160px;
+    width: 100%;
+  }
 
-  .container_tasks{
+  .header_title {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+
+  .header_text {
+    margin-top: 70px;
+    color: #c02615;
+    border: #c02615 1px solid;
+    position: absolute;
+  }
+
+  .container_tasks {
     width: 100%;
     height: 146px;
     display: block;
   }
 
-  .container_card{
+  .container_card {
     width: 210px;
-   
   }
 
-
-
-  .icone{
+  .icone {
     display: block;
     text-align: right;
   }
 
-  .card_button_concluir{
+  .card_button_concluir {
     display: flex;
-    background:#fff;
+    background: #fff;
     color: #422755;
-    border:1px solid #422755;
+    border: 1px solid #422755;
     font-weight: bold;
     font-size: 16px;
     font-family: Open Sans;
-
   }
 
-  .card_button_concluir > div{
+  .card_button_concluir > div {
     display: none;
   }
 
+  .card:hover .card_button_prazo {
+    display: none;
+  }
+
+  .dicas {
+    display: none;
+  }
+
+  .sobre {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 309px;
+    align-items: center;
+  }
+
+  .sobre_imagem {
+    width: 157px;
+    margin-bottom: 50px;
+  }
+
+  .sobre_text {
+    width: 309px;
+    margin: 0px;
+  }
   
-.dicas{
-  display: none;
-}
-
-.sobre{
-flex-direction: column;
-flex-wrap: wrap;
-width: 100%;
-align-items: center;
-}
-
-.sobre_imagem{
-  margin-bottom: 50px;
-}
-
-.sobre_text{
-  margin: 0;
-  border: 1px solid red;
-}
-
-
 }
