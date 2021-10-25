@@ -86,6 +86,7 @@
   font-size: 14px;
   color: #414141;
   border: none;
+
 }
 
 /* Estilização Cards de tarefas */
@@ -99,7 +100,7 @@
 }
 
 .card {
-  min-height:100% ;
+  height:100%;
   border: 1px solid #000;
   border-radius: 14px;
   padding: 10px;
@@ -144,7 +145,7 @@
 }
 
 .icone {
-  color: #c02615;
+  color: #F04837;
   display: none;
 }
 
@@ -263,13 +264,11 @@ i {
 
 .card:hover .card_button_prazo {
   display: block;
-
-
 }
 
 .card:hover .card_button_concluir {
   display: block;
-  
+
 }
 
 .card_button {
@@ -399,15 +398,15 @@ footer {
   text-align: center;
   font-size: 12px;
   color: #fff;
+  
 }
 
 .footer_text {
-  display: flex;
+  padding-top: 10px;
   justify-content: center;
   align-items: center;
-  height: 100%;
   font-size: 12px;
-  line-height: 20px;
+
 }
 
 /* Estilização Mobile */
@@ -420,12 +419,12 @@ footer {
 
   .header_index {
     height: 160px;
-      
   }
 
   .header_title {
     margin-top: 20px;
     font-size: 24px;
+    
   }
 
   .header_text {
@@ -433,24 +432,26 @@ footer {
     color: #c02615;
     border: #c02615 1px solid;
     position: absolute;
+   
+  
   }
 
   .container_tasks {
     width: 344px;
     height: 146px;
     display: block;
-      
+     
   }
 
   .container_seach{
-    display: flex;
-    justify-content: space-around;
-   padding: 10px;
-  }
+    display:flex ;
+ 
+ }
 
   .container_deadline{
-    display: flex;
+    display:flex;
     justify-content: space-around;
+
   }
 
   .container_card {
@@ -459,8 +460,9 @@ footer {
   }
 
   .icone {
-    display: block;
-    text-align: right;
+    display: inline-flex;
+   margin-left: 50px;
+    font-size: 20px;
   }
 
   .card_button_concluir {
@@ -494,6 +496,7 @@ footer {
 
   .sobre_imagem {
     width: 157px;
+    height: 94px;
     margin-bottom: 50px;
     margin-left: 0;
   }
