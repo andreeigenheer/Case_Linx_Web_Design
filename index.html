@@ -13,40 +13,43 @@
     <title>Index</title>
 </head>
 
-    <header>
-        <div class="header_title">
-            <p>Tarefas a fazer</p>
-        </div>
-
-            <div class="header_text">
-                <p>Adicione e complete tarefas para organizar melhor sua semana :)</p>
-            </div>
-    </header>
-
-        <div class="container_tasks">
-        <div class="container_seach">
-            <input class="container_input" placeholder="Busque tarefas" />
-            <button class="container_button">Buscar</button>
-        </div>
-
-        <div class="container_deadline">
-            <label class="container_label">Organizar por:</label>
-            <select class="container_select" required>
-                <option>Prazo</option>
-            </select>
-
-        </div>
+<header>
+    <div class="header_title">
+        <p>Tarefas a fazer</p>
     </div>
 
-    <div class="container_card">
-        
-        <div class="card">
-                   
-            <img class="img_card" src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
-            
+    <div class="header_text">
+        <p>Adicione e complete tarefas para organizar melhor sua semana :)</p>
+    </div>
+</header>
+
+<div class="container_tasks">
+    <div class="container_seach">
+        <input class="container_input" placeholder="Busque tarefas" />
+        <button class="container_button">Buscar</button>
+    </div>
+
+    <div class="container_deadline">
+        <label class="container_label">Organizar por:</label>
+        <select class="container_select" required>
+            <option>Prazo</option>
+        </select>
+
+    </div>
+</div>
+
+<div class="container_card">
+
+    <div class="card">
+
+        <img class="img_card" src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
+
+         <div class="alinhamento_mob">
+
             <div class="tag_card_prazo_curto">Prazo Curto!</div>
-          
-            <label class="input_card_tarefa" type="text" id="text_tarefa" name="tarefa">Nome da tarefa<div class="icone"><i class="far fa-clock"></i></div></label> 
+
+            <label class="input_card_tarefa" type="text" id="text_tarefa" name="tarefa">Nome da tarefa<div
+                    class="icone"><i class="far fa-clock"></i></div></label>
 
             <label class="label_card_descricao" id="text_descricao">
                 Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.
@@ -54,251 +57,317 @@
 
             <div class="prazo">
                 <label for="date" class="card_prazo">Prazo:</label>
-               <label class="label_prazo_curto">00/00</label>
+                <label class="label_prazo_curto">00/00</label>
             </div>
 
             <div class="inclusao">
-                <label for="date" class="card_inclusao">Data da inclusão: há duas semanas</label>
+                <label for="date" class="card_inclusao">Data da inclusão: há 2 semanas</label>
             </div>
 
-            <button class="card_button_concluir"><div><i class="fas fa-check"></i></div>Concluir</button>
+            <button class="card_button_concluir">
+                <div><i class="fas fa-check"></i></div>Concluir
+            </button>
             <button class="card_button_prazo"><i class="fas fa-clock"></i>Alterar Prazo</button>
-           
+
+            <div class="inclusao">
+                <label for="date" class="card_inclusao_mob">Data da inclusão: há 2 semanas</label>
+            </div>
+
         </div>
-
-        <div class="card">
-            
-            <img class="img_card" src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
-
-            <div class="tag_card_prazo_atrasado">Atrasado!</div>
-
-            <label class="input_card_tarefa" type="text" id="text_tarefa" name="tarefa">Nome da tarefa<div class="icone"><i class="far fa-clock"></i></div></label> 
-
-            <label class="label_card_descricao" id="text_descricao">
-                Descrição da tarefa, o que deve ser feito.
-            </label>
-
-                <div class="prazo">
-                    <label for="date" class="card_prazo_atrasado">Prazo:</label>
-                    <label class="label_prazo_curto">00/00</label>
-                    <label class="card_periodo_atrasado">Atrasado a 3 dias!</label>
-            </div>
-        
-            <div class="inclusao">
-                <label for="date" class="card_inclusao">Data da inclusão: há duas semanas</label>
-            </div>
-
-            <button class="card_button_concluir"><div><i class="fas fa-check"></i></div>Concluir</button>
-            <button class="card_button_prazo"><i class="fas fa-clock"></i>Alterar Prazo</button>
-           
-        </div> 
-
-        <div class="card">
-            
-            <img class="img_card" src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
-
-            <label class="input_card_tarefa" type="text" id="text_tarefa" name="tarefa">Nome da tarefa<div class="icone"><i class="far fa-clock"></i></div></label> 
-
-            <label class="label_card_descricao" id="text_descricao">
-                Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.
-            </label>
-
-                <div class="prazo">
-                    <label for="date" class="card_prazo">Prazo:</label>
-                    <label class="label_prazo">00/00</label>
-            </div>
-        
-            <div class="inclusao">
-                <label for="date" class="card_inclusao">Data da inclusão: há duas semanas</label>
-            </div>
-
-            <button class="card_button_concluir"><div><i class="fas fa-check"></i></div>Concluir</button>
-            <button class="card_button_prazo"><i class="fas fa-clock"></i>Alterar Prazo</button>
-           
-        </div> 
-
-        <div class="card">
-            
-            <img class="img_card" src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
-            
-            <label class="input_card_tarefa" type="text" id="text_tarefa" name="tarefa">Nome da tarefa<div class="icone"><i class="far fa-clock"></i></div></label> 
-
-            <label class="label_card_descricao" id="text_descricao">
-                Descrição da tarefa, o que deve ser feito.
-            </label>
-
-                <div class="prazo">
-                    <label for="date" class="card_prazo">Prazo:</label>
-                    <label class="label_prazo">00/00</label>
-            </div>
-        
-            <div class="inclusao">
-                <label for="date" class="card_inclusao">Data da inclusão: há duas semanas</label>
-            </div>
-
-            <button class="card_button_concluir"><div><i class="fas fa-check"></i></div>Concluir</button>
-            <button class="card_button_prazo"><i class="fas fa-clock"></i>Alterar Prazo</button>
-           
-        </div>
-
-        
-        <div class="card">
-            
-            <img class="img_card" src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
-
-            <label class="input_card_tarefa" type="text" id="text_tarefa" name="tarefa">Nome da tarefa<div class="icone"><i class="far fa-clock"></i></div></label> 
-
-            <label class="label_card_descricao" id="text_descricao">
-                Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.
-            </label>
-
-                    
-            <div class="inclusao">
-                <label for="date" class="card_inclusao">Data da inclusão: há duas semanas</label>
-            </div>
-
-            <button class="card_button_concluir"><div><i class="fas fa-check"></i></div>Concluir</button>
-            <button class="card_button_prazo"><i class="fas fa-clock"></i>Alterar Prazo</button>
-           
-        </div> 
-
-        <div class="card">
-            
-            <img class="img_card" src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
-
-            <div class="tag_card_prazo_curto">Prazo Curto!</div>
-
-            <label class="input_card_tarefa" type="text" id="text_tarefa" name="tarefa">Nome da tarefa<div class="icone"><i class="far fa-clock"></i></div></label> 
-            <label class="label_card_descricao" id="text_descricao">
-                Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.
-            </label>
-
-                <div class="prazo">
-                    <label for="date" class="card_prazo">Prazo:</label>
-                    <label class="label_prazo">00/00</label>
-                 </div>
-        
-            <div class="inclusao">
-                <label for="date" class="card_inclusao">Data da inclusão: há duas semanas</label>
-            </div>
-
-            <button class="card_button_concluir"><div><i class="fas fa-check"></i></div>Concluir</button>
-            <button class="card_button_prazo"><i class="fas fa-clock"></i>Alterar Prazo</button>
-           
-        </div> 
-
-        <div class="card">
-            
-            <img class="img_card" src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
-
-            <label class="input_card_tarefa" type="text" id="text_tarefa" name="tarefa">Nome da tarefa<div class="icone"><i class="far fa-clock"></i></div></label> 
-
-            <label class="label_card_descricao" id="text_descricao">
-                Descrição da tarefa, o que deve ser feito.
-            </label>
-
-                <div class="prazo">
-                    <label for="date" class="card_prazo">Prazo:</label>
-                    <label class="label_prazo">00/00</label>
-            </div>
-        
-            <div class="inclusao">
-                <label for="date" class="card_inclusao">Data da inclusão: há duas semanas</label>
-            </div>
-
-            <button class="card_button_concluir"><div><i class="fas fa-check"></i></div>Concluir</button>
-            <button class="card_button_prazo"><i class="fas fa-clock"></i>Alterar Prazo</button>
-           
-        </div> 
-
-        <div class="card">
-            
-            <img class="img_card" src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
-
-            <label class="input_card_tarefa" type="text" id="text_tarefa" name="tarefa">Nome da tarefa<div class="icone"><i class="far fa-clock"></i></div></label> 
-
-            <label class="label_card_descricao" id="text_descricao">
-                Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.
-            </label>
-                     
-            <div class="inclusao">
-                <label for="date" class="card_inclusao">Data da inclusão: há duas semanas</label>
-            </div>
-
-            <button class="card_button_concluir"><div><i class="fas fa-check"></i></div>Concluir</button>
-            <button class="card_button_prazo"><i class="fas fa-clock"></i>Alterar Prazo</button>
-           
-        </div> 
-
-        <button class="card_button">Ver mais +</button>
-    </div> 
-
-
-    <div class="dicas">
-        <div class="dicas_paragrafo">
-            Quer receber dicas para organizar melhor sua rotina? Cadastre-se!
-        </div>
-
-        <form class="form_dicas">
-            <div class="dicas_cadastro">
-                <div class="dicas_nome">
-                    <label class="form_label">nome</label>
-                    <input class="form_input" type="text" required name="nome" placeholder="Digite seu nome" />
-                </div>
-
-                <div class="dicas_email">
-                    <label class="form_label" for="email">e-mail:</label>
-                    <input class="form_input" type="email" required name="email" placeholder="Digite seu e-mail" />
-                </div>
-
-                <div class="button_form">
-                    <button class="button_dicas" type="submit">Cadastrar</button>
-                </div>
-            </div>
-        </form>
     </div>
 
-    <section class="sobre">
-        <div class="div_sobre">
-            <img class="sobre_imagem" src="./assets/image/logo_linx.JPG" alt="Logo da Linx" />
+    <div class="card">
+
+        <img class="img_card" src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
+
+        <div class="alinhamento_mob">
+            <div class="tag_card_prazo_atrasado">Atrasado!</div>
+
+            <label class="input_card_tarefa" type="text" id="text_tarefa" name="tarefa">Nome da tarefa<div
+                    class="icone"><i class="far fa-clock"></i></div></label>
+
+            <label class="label_card_descricao" id="text_descricao">
+                Descrição da tarefa, o que deve ser feito.
+            </label>
+
+            <div class="prazo">
+                <label for="date" class="card_prazo_atrasado">Prazo:</label>
+                <label class="label_prazo_curto">00/00</label>
+                <label class="card_periodo_atrasado">Atrasado a 3 dias!</label>
+            </div>
+
+            <div class="inclusao">
+                <label for="date" class="card_inclusao">Data da inclusão: há 2 semanas</label>
+            </div>
+
+            <button class="card_button_concluir">
+                <div><i class="fas fa-check"></i></div>Concluir
+            </button>
+            <button class="card_button_prazo"><i class="fas fa-clock"></i>Alterar Prazo</button>
+
+            <div class="inclusao">
+                <label for="date" class="card_inclusao_mob">Data da inclusão: há 2 semanas</label>
+            </div>
+
+
         </div>
+    </div>
 
-        <div class="sobre_text">
-            <p>
-                A Linx é uma empresa brasileira especialista em tecnologia para o
-                varejo. Líder no mercado de software de gestão, com 45,6% de market
-                share do mercado varejista, conforme atesta o IDC.
-            </p>
+    <div class="card">
 
-            <p>
-                Toda a expertise da Linx na jornada de compra é transformada em
-                insights fundamentais para atingir o que os varejistas mais esperam:
-                fidelizar seus consumidores e atingir resultados concretos e
-                relevantes.
-            </p>
+        <img class="img_card" src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
+        <div class="alinhamento_mob">
+            <label class="input_card_tarefa" type="text" id="text_tarefa" name="tarefa">Nome da tarefa<div
+                    class="icone"><i class="far fa-clock"></i></div></label>
 
-            <p>
-                Com capital aberto na B3 desde 2013, a Linx também se tornou a
-                primeira empresa brasileira de software com capital aberto na NYSE, em
-                2019. A empresa possui mais de 3,5 mil colaboradores distribuídos
-                entre sua sede em São Paulo, 15 filiais pelo Brasil e 5 países da
-                América. Para saber mais, acesse linx.com.br/imprensa.
-            </p>
+            <label class="label_card_descricao" id="text_descricao">
+                Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.
+            </label>
+
+            <div class="prazo">
+                <label for="date" class="card_prazo">Prazo:</label>
+                <label class="label_prazo">00/00</label>
+            </div>
+
+            <div class="inclusao">
+                <label for="date" class="card_inclusao">Data da inclusão: há 2 semanas</label>
+            </div>
+
+            <button class="card_button_concluir">
+                <div><i class="fas fa-check"></i></div>Concluir
+            </button>
+            <button class="card_button_prazo"><i class="fas fa-clock"></i>Alterar Prazo</button>
+
+            <div class="inclusao">
+                <label for="date" class="card_inclusao_mob">Data da inclusão: há 2 semanas</label>
+            </div>
+
         </div>
-    </section>
+    </div>
 
-    <footer>
-        <div class="footer_index">
-            <div class="footer_text">
-                <div>
-                    <p>Testando suas habilidades em HTML e CSS.</p>
-                    <p>Linx Impulse 2021</p>
-                    <p>Teste ficcional</p>
-                    <p>Por André Eigenheer</p>
-                </div>
+    <div class="card">
+
+        <img class="img_card" src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
+        <div class="alinhamento_mob">
+            <label class="input_card_tarefa" type="text" id="text_tarefa" name="tarefa">Nome da tarefa<div
+                    class="icone"><i class="far fa-clock"></i></div></label>
+
+            <label class="label_card_descricao" id="text_descricao">
+                Descrição da tarefa, o que deve ser feito.
+            </label>
+
+            <div class="prazo">
+                <label for="date" class="card_prazo">Prazo:</label>
+                <label class="label_prazo">00/00</label>
+            </div>
+
+            <div class="inclusao">
+                <label for="date" class="card_inclusao">Data da inclusão: há 2 semanas</label>
+            </div>
+
+            <button class="card_button_concluir">
+                <div><i class="fas fa-check"></i></div>Concluir
+            </button>
+            <button class="card_button_prazo"><i class="fas fa-clock"></i>Alterar Prazo</button>
+
+            <div class="inclusao">
+                <label for="date" class="card_inclusao_mob">Data da inclusão: há 2 semanas</label>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="card">
+
+        <img class="img_card" src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
+        <div class="alinhamento_mob">
+            <label class="input_card_tarefa" type="text" id="text_tarefa" name="tarefa">Nome da tarefa<div
+                    class="icone"><i class="far fa-clock"></i></div></label>
+
+            <label class="label_card_descricao" id="text_descricao">
+                Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.
+            </label>
+
+
+            <div class="inclusao">
+                <label for="date" class="card_inclusao">Data da inclusão: há 2 semanas</label>
+            </div>
+
+            <button class="card_button_concluir">
+                <div><i class="fas fa-check"></i></div>Concluir
+            </button>
+            <button class="card_button_prazo"><i class="fas fa-clock"></i>Alterar Prazo</button>
+
+            <div class="inclusao">
+                <label for="date" class="card_inclusao_mob">Data da inclusão: há 2 semanas</label>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card">
+
+        <img class="img_card" src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
+        <div class="alinhamento_mob">
+            <div class="tag_card_prazo_curto">Prazo Curto!</div>
+
+            <label class="input_card_tarefa" type="text" id="text_tarefa" name="tarefa">Nome da tarefa<div
+                    class="icone"><i class="far fa-clock"></i></div></label>
+            <label class="label_card_descricao" id="text_descricao">
+                Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.
+            </label>
+
+            <div class="prazo">
+                <label for="date" class="card_prazo">Prazo:</label>
+                <label class="label_prazo">00/00</label>
+            </div>
+
+            <div class="inclusao">
+                <label for="date" class="card_inclusao">Data da inclusão: há 2 semanas</label>
+            </div>
+
+            <button class="card_button_concluir">
+                <div><i class="fas fa-check"></i></div>Concluir
+            </button>
+            <button class="card_button_prazo"><i class="fas fa-clock"></i>Alterar Prazo</button>
+
+            <div class="inclusao">
+                <label for="date" class="card_inclusao_mob">Data da inclusão: há 2 semanas</label>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card">
+
+        <img class="img_card" src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
+        <div class="alinhamento_mob">
+            <label class="input_card_tarefa" type="text" id="text_tarefa" name="tarefa">Nome da tarefa<div
+                    class="icone"><i class="far fa-clock"></i></div></label>
+
+            <label class="label_card_descricao" id="text_descricao">
+                Descrição da tarefa, o que deve ser feito.
+            </label>
+
+            <div class="prazo">
+                <label for="date" class="card_prazo">Prazo:</label>
+                <label class="label_prazo">00/00</label>
+            </div>
+
+            <div class="inclusao">
+                <label for="date" class="card_inclusao">Data da inclusão: há 2 semanas</label>
+            </div>
+
+            <button class="card_button_concluir">
+                <div><i class="fas fa-check"></i></div>Concluir
+            </button>
+            <button class="card_button_prazo"><i class="fas fa-clock"></i>Alterar Prazo</button>
+
+            <div class="inclusao">
+                <label for="date" class="card_inclusao_mob">Data da inclusão: há 2 semanas</label>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card">
+
+        <img class="img_card" src="assets/image/tarefa_imagem.JPG" alt="tarefa_imagem" />
+        
+        <div class="alinhamento_mob">
+            <label class="input_card_tarefa" type="text" id="text_tarefa" name="tarefa">Nome da tarefa<div
+                    class="icone"><i class="far fa-clock"></i></div></label>
+
+            <label class="label_card_descricao" id="text_descricao">
+                Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.
+            </label>
+
+            <div class="inclusao">
+                <label for="date" class="card_inclusao">Data da inclusão: há 2 semanas</label>
+            </div>
+
+            <button class="card_button_concluir">
+                <div><i class="fas fa-check"></i></div>Concluir
+            </button>
+            <button class="card_button_prazo"><i class="fas fa-clock"></i>Alterar Prazo</button>
+
+            <div class="inclusao">
+                <label for="date" class="card_inclusao_mob">Data da inclusão: há 2 semanas</label>
+            </div>
+
+        </div>
+    </div>
+
+    <button class="card_button">Ver mais +</button>
+</div>
+
+
+<div class="dicas">
+    <div class="dicas_paragrafo">
+        Quer receber dicas para organizar melhor sua rotina? Cadastre-se!
+    </div>
+
+    <form class="form_dicas">
+        <div class="dicas_cadastro">
+            <div class="dicas_nome">
+                <label class="form_label">nome</label>
+                <input class="form_input" type="text" required name="nome" placeholder="Digite seu nome" />
+            </div>
+
+            <div class="dicas_email">
+                <label class="form_label" for="email">e-mail:</label>
+                <input class="form_input" type="email" required name="email" placeholder="Digite seu e-mail" />
+            </div>
+
+            <div class="button_form">
+                <button class="button_dicas" type="submit">Cadastrar</button>
             </div>
         </div>
-    </footer>
+    </form>
+</div>
+
+<section class="sobre">
+    <div class="div_sobre">
+        <img class="sobre_imagem" src="./assets/image/logo_linx.JPG" alt="Logo da Linx" />
+    </div>
+
+    <div class="sobre_text">
+        <p>
+            A Linx é uma empresa brasileira especialista em tecnologia para o
+            varejo. Líder no mercado de software de gestão, com 45,6% de market
+            share do mercado varejista, conforme atesta o IDC.
+        </p>
+
+        <p>
+            Toda a expertise da Linx na jornada de compra é transformada em
+            insights fundamentais para atingir o que os varejistas mais esperam:
+            fidelizar seus consumidores e atingir resultados concretos e
+            relevantes.
+        </p>
+
+        <p>
+            Com capital aberto na B3 desde 2013, a Linx também se tornou a
+            primeira empresa brasileira de software com capital aberto na NYSE, em
+            2019. A empresa possui mais de 3,5 mil colaboradores distribuídos
+            entre sua sede em São Paulo, 15 filiais pelo Brasil e 5 países da
+            América. Para saber mais, acesse linx.com.br/imprensa.
+        </p>
+    </div>
+</section>
+
+<footer>
+    <div class="footer_index">
+        <div class="footer_text">
+            <div>
+                <p>Testando suas habilidades em HTML e CSS.</p>
+                <p>Linx Impulse 2021</p>
+                <p>Teste ficcional</p>
+                <p>Por André Eigenheer</p>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 
 <script src="https://kit.fontawesome.com/b303293aac.js" crossorigin="anonymous"></script>

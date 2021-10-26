@@ -7,7 +7,7 @@
 .header_title {
   display: flex;
   text-align: center;
-  flex-direction: column; 
+  flex-direction: column;
   flex-wrap: wrap;
   color: #ffffff;
   background: #422755;
@@ -17,7 +17,7 @@
   font-size: 36px;
   font-weight: bold;
   text-align: center;
- padding-top: 50px;
+  padding-top: 50px;
 }
 
 .header_text {
@@ -28,7 +28,7 @@
   transform: translate(-50%, 50%);
   z-index: 3;
   font-size: 18px;
-  color:#fff;
+  color: #fff;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -96,7 +96,6 @@
   font-size: 14px;
   color: #414141;
   border: none;
-
 }
 
 /* Estilização Cards de tarefas */
@@ -111,12 +110,17 @@
 }
 
 .card {
-  height:100%;
+  height: 100%;
   border: 1px solid #000;
   border-radius: 14px;
   padding: 10px;
   margin: 10px 10px;
   color: #414141;
+  display: flex;
+  flex-direction: column;
+}
+
+.alinhamento_mob {
   display: flex;
   flex-direction: column;
 }
@@ -134,7 +138,7 @@
   text-align: center;
   font-size: 12px;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: -170px;
   margin-left: -20px;
 }
 
@@ -151,12 +155,12 @@
   text-align: center;
   font-size: 12px;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: -170px;
   margin-left: -20px;
 }
 
 .icone {
-  color: #F04837;
+  color: #f04837;
   display: none;
 }
 
@@ -227,6 +231,10 @@
   margin-top: 5px;
 }
 
+.card_inclusao_mob {
+  display: none;
+}
+
 i {
   margin-right: 10px;
 }
@@ -279,7 +287,6 @@ i {
 
 .card:hover .card_button_concluir {
   display: block;
-
 }
 
 .card_button {
@@ -409,7 +416,7 @@ footer {
   text-align: center;
   font-size: 12px;
   color: #fff;
- }
+}
 
 .footer_text {
   padding-top: 10px;
@@ -421,86 +428,87 @@ footer {
 /* Estilização Mobile */
 
 @media (max-width: 600px) {
+  .header_title {
+    height: 160px;
+    padding-top: 0;
+    font-style: normal;
 
-.header_title{
-  height: 160px;
-  padding-top: 0;
-  font-style: normal;
-}
+  }
 
-  .header_text{
-  top: 100px;
-  left: 0;
-  transform: none;
-  z-index: 3;
-  flex-wrap: wrap;
-  color: #422755;
-  font-size: 16px;
-  line-height: 22px;
+  .header_text {
+    top: 100px;
+    left: 0; 
+    transform: none;
+    z-index: 3;
+    flex-wrap: wrap;
+    color: #422755;
+    font-size: 16px;
+  
   }
 
   .container_tasks {
     margin-top: 50px;
     max-width: 344px;
     height: 146px;
-   display: grid; 
-   padding: 0 10px;
-     }
+    display: grid;
+    padding: 0 10px;
+  }
 
-   .container_seach{
-    display:inline-flex ;
-    
- } 
-  .container_deadline{
-    display:inline-flex;
-    justify-content: space-around; 
-
+  .container_seach {
+    display: inline-flex;
+  }
+  .container_deadline {
+    display: inline-flex;
+    justify-content: space-around;
   }
 
   .container_card {
-    width: 210px;
-    display:flex;
-    margin-bottom: 10px;
-              
+    display: grid;
   }
 
-   .card{
-    transform: rotate(-90deg);
-    padding: 0;
-    align-items:center
-    
-   }
+  .card {
 
-.img_card{
-   width: 258,94px;
-   height:170px;
-   clip-path: polygon(0 0, 70% 0, 70% 100%, 0% 100%); 
-   margin: 5px 0 0 0 ;
+    width: 340px;
+    height: 210px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: left;
+    align-items: center; 
+    line-height: 19px;
+  }
 
-}
- 
-   /* .img_card,
-   .input_card_tarefa,
-   .label_card_descricao, 
-   .prazo,
-   .inclusao  {
-    transform: rotate(90deg);
-             
-   }  */
+   .alinhamento_mob {
+     margin-left: -60px;
+  }
 
-    .tag_card_prazo_curto, .tag_card_prazo_atrasado{
-     transform: rotate(90deg);
-     margin-left: 90px;
-   } 
+  .img_card {
+    width: 258, 94px;
+    height: 200px;
+    clip-path: polygon(0 0, 70% 0, 70% 100%, 0% 100%);
+  }
+
+  .tag_card_prazo_curto,
+  .tag_card_prazo_atrasado {
+    margin-top: 0px;
+    margin-left: -200px;
+  }
 
   .icone {
-    display: flex;
-   margin-left: 50px;
+    display: inline;
+    padding-left: 20px;
     font-size: 20px;
   }
 
-   .card_button_concluir {
-    transform: rotate(90deg);
+  .label_card_descricao{
+    font-size: 11px;
+  }
+
+  .card_periodo_atrasado,
+  .card_inclusao {
+    display: none;
+  }
+
+  .card_button_concluir {
     display: flex;
     background: #fff;
     color: #422755;
@@ -509,8 +517,16 @@ footer {
     font-size: 16px;
     font-family: Open Sans;
     width: 155px;
-    height:30px;
-  } 
+    height: 30px;
+  }
+
+  .card_inclusao_mob {
+    font-size: 10px;
+    color: #414141;
+    margin-top: 5px;
+    display: flex;
+    text-align: left;
+  }
 
   .card_button_concluir > div {
     display: none;
@@ -518,10 +534,6 @@ footer {
 
   .card:hover .card_button_prazo {
     display: none;
-  }
-
-  .card_button{
-    margin-top: 100px;
   }
 
   .dicas {
@@ -546,5 +558,4 @@ footer {
     width: 309px;
     margin: 0px;
   }
-
 }
