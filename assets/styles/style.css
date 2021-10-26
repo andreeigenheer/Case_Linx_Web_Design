@@ -8,6 +8,7 @@
   display: flex;
   text-align: center;
   flex-direction: column;
+  flex-wrap: wrap;
   color: #ffffff;
   height: 399px;
   background: #422755 0% 0% no-repeat padding-box;
@@ -28,10 +29,15 @@
   font-size: 18px;
 }
 
+.header_text_mobile{
+  display: none;
+}
+
 /* Estilização Container Busca de Tarefas */
 
 .container_tasks {
-  width: 1081px;
+  width: 100%;
+  max-width: 1081px;
   height: 85px;
   background: #feaf3d;
   border-radius: 8px;
@@ -97,6 +103,7 @@
   max-width: 1081px;
   margin: 0px auto;
   justify-content: center;
+  text-align: center;
 }
 
 .card {
@@ -398,90 +405,59 @@ footer {
   text-align: center;
   font-size: 12px;
   color: #fff;
-  
-}
+ }
 
 .footer_text {
   padding-top: 10px;
   justify-content: center;
   align-items: center;
   font-size: 12px;
-
 }
 
 /* Estilização Mobile */
 
 @media (max-width: 600px) {
 
-  :root{
-    width: 100%;
-  }
-
-  .header_index {
-    height: 160px;
-  }
-
-  .header_title {
-    margin-top: 20px;
-    font-size: 24px;
-    
-  }
-
-  .header_text {
-    margin-top: 70px;
-    color: #c02615;
-    border: #c02615 1px solid;
-    position: absolute;
-   
-  
-  }
 
   .container_tasks {
-    width: 344px;
+    max-width: 344px;
     height: 146px;
-    display: block;
-     
-  }
+   display: grid; 
+   padding: 0 10px;
+     }
 
-  .container_seach{
-    display:flex ;
- 
- }
-
+   .container_seach{
+    display:inline-flex ;
+    
+ } 
   .container_deadline{
-    display:flex;
-    justify-content: space-around;
+    display:inline-flex;
+    justify-content: space-around; 
 
   }
 
   .container_card {
     width: 210px;
-    display: block;
-    
+    display:block;
+          
   }
 
    .card{
     transform: rotate(-90deg);
-    width: 210px;
-    height: 340px;
-    margin: 0;
-    margin-bottom: -100px;
-    margin-top: -50px;
-    padding: 0;
-    }
+    
+   }
 
 .img_card{
    width: 258,94px;
-   height:210px;
+   height:170px;
    clip-path: polygon(0 0, 70% 0, 70% 100%, 0% 100%); 
-   margin-top: 20px;
+   margin: 5px 0 0 0 ;
 
 }
 .input_card_tarefa{
   
   align-items: center;
 }
-
 
    .img_card,
    .input_card_tarefa,
@@ -493,9 +469,10 @@ footer {
         
    } 
 
-   .tag_card_prazo_curto, .tag_card_prazo_atrasado{
-     display: none;
-   }
+    .tag_card_prazo_curto, .tag_card_prazo_atrasado{
+     transform: rotate(90deg);
+     margin-left: 90px;
+   } 
 
   .icone {
     display: inline-flex;
@@ -503,7 +480,7 @@ footer {
     font-size: 20px;
   }
 
-  .card_button_concluir {
+  /* .card_button_concluir {
     display: flex;
     background: #fff;
     color: #422755;
@@ -513,7 +490,7 @@ footer {
     font-family: Open Sans;
     width: 155px;
     height:30px;
-  }
+  } */
 
   .card_button_concluir > div {
     display: none;
