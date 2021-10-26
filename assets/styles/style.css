@@ -4,33 +4,37 @@
 
 /* Estilização Cabeçalho */
 
-.header_index {
+.header_title {
   display: flex;
   text-align: center;
-  flex-direction: column;
+  flex-direction: column; 
   flex-wrap: wrap;
   color: #ffffff;
-  height: 399px;
-  background: #422755 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
+  background: #422755;
   clip-path: polygon(0 0, 100% 0, 100% 69%, 0 60%);
   line-height: 10px;
   height: 381px;
-}
-
-.header_title {
   font-size: 36px;
   font-weight: bold;
   text-align: center;
-  margin-top: 50px;
+ padding-top: 50px;
 }
 
 .header_text {
   font-size: 18px;
-}
-
-.header_text_mobile{
-  display: none;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 3;
+  font-size: 18px;
+  color:#fff;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px;
 }
 
 /* Estilização Container Busca de Tarefas */
@@ -418,8 +422,25 @@ footer {
 
 @media (max-width: 600px) {
 
+.header_title{
+  height: 160px;
+  padding-top: 0;
+  font-style: normal;
+}
+
+  .header_text{
+  top: 100px;
+  left: 0;
+  transform: none;
+  z-index: 3;
+  flex-wrap: wrap;
+  color: #422755;
+  font-size: 16px;
+  line-height: 22px;
+  }
 
   .container_tasks {
+    margin-top: 50px;
     max-width: 344px;
     height: 146px;
    display: grid; 
@@ -438,12 +459,15 @@ footer {
 
   .container_card {
     width: 210px;
-    display:block;
-          
+    display:flex;
+    margin-bottom: 10px;
+              
   }
 
    .card{
     transform: rotate(-90deg);
+    padding: 0;
+    align-items:center
     
    }
 
@@ -454,20 +478,15 @@ footer {
    margin: 5px 0 0 0 ;
 
 }
-.input_card_tarefa{
-  
-  align-items: center;
-}
-
-   .img_card,
+ 
+   /* .img_card,
    .input_card_tarefa,
    .label_card_descricao, 
-   .card_button_concluir ,
    .prazo,
    .inclusao  {
     transform: rotate(90deg);
-        
-   } 
+             
+   }  */
 
     .tag_card_prazo_curto, .tag_card_prazo_atrasado{
      transform: rotate(90deg);
@@ -475,12 +494,13 @@ footer {
    } 
 
   .icone {
-    display: inline-flex;
+    display: flex;
    margin-left: 50px;
     font-size: 20px;
   }
 
-  /* .card_button_concluir {
+   .card_button_concluir {
+    transform: rotate(90deg);
     display: flex;
     background: #fff;
     color: #422755;
@@ -490,7 +510,7 @@ footer {
     font-family: Open Sans;
     width: 155px;
     height:30px;
-  } */
+  } 
 
   .card_button_concluir > div {
     display: none;
